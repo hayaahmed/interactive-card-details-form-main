@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="cards">
+      <div class="background"></div>
+      <div class="card-one">
+        <!-- <img src="images/bg-card-back.png" alt=""> -->
+        <span class="card-cvc"> 000</span>
+      </div>
+      <div class="card-two">
+        <!-- <img src="images/bg-card-front.png" alt=""> -->
+        <img class="card-logo" src="images/card-logo.svg" alt="">
+        <div class="card-num">0000 0000 0000 0000</div>
+        <h5 class="card-name">Jane Appleseed</h5> 
+        <span class="card-date" id="mon">00</span><span class="slash">/</span><span id="theyear">00</span>
+      </div>
+    </div>
+   <div class="forms">
+    <div class="fill-form">
+    <div class="input">
+      <label for="">Cardholder Name</label>
+      <input class="name-in" type="text" placeholder="e.g. Jane Appleseed">
+      <span class="error-n">cant be empty</span>
+    </div>
+     <div class="input">
+      <label for="">Card Number</label>
+      <input type="text" class="card-n" placeholder="e.g. 1234 5678 9123 0000">
+      <span class="error-N">wrong format,numbers only</span>
+     </div>
+      <label for="">Exp. Date (MM/YY)</label>    <label for="" class="tcvc">cvc</label> <div class="split"></div>
+      <input type="date month" class="month" placeholder="MM"><span class="b-2 blank-error">cant be blank</span><input type="date year" placeholder="YY" class="year"> <span class="b-3 blank-error">cant be blank</span><input type="number" class="cvc" placeholder=" e.g. 123"> <span class="b-4 blank-error">cant be blank</span>
+      <button class="confirm">  Confirm</button>
+    </div>
+      <!-- Completed state start -->
+    <div class="thankyou">
+      <img src="images/icon-complete.svg" alt="">
+      <h2> Thank you!</h2>
+      <p> We've added your card details</p>
+      <button class="cont">  Continue</button>
+    </div>
+   </div>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

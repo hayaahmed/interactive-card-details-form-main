@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    width: 500px;
+    height: 900px;
+    background-image: url("images/bg-main-desktop.png");
+    background-size: cover;
+    position: relative;
+}
+
+.cards .card-one {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-image: url("images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    left: 230px;
+    top: 320px;
+}
+
+.card-one .card-cvc {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 84px;
+    text-align: right;
+    color: white;
+    font-size: 15px;
+}
+
+.cards .card-two {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    left: 180px;
+    top: 100px;
+}
+
+.card-two .card-logo {
+    margin: 30px;
+    width: 70px;
+    height: 40px;
+
+}
+
+.card-two .card-num {
+    margin: 7px;
+    margin-left: 20px;
+    font-size: 27px;
+    color: white;
+}
+
+.card-two .card-name {
+    color: white;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.card-two .card-date {
+    margin-left: 150px;
+    color: white;
+    font-size: 14px;
+}
+
+.card-two #theyear {
+    color: white;
+    font-size: 14px;
+}
+
+.card-two .slash {
+    color: white;
+    font-size: 14px;
+}
+
+.forms {
+    margin: 20px auto;
+    margin-top: 150px;
+
+}
+
+.forms .fill-form {
+    display: block;
+
+}
+
+.fill-form label {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+
+
+input.get-error {
+    border: 0;
+    outline: 1px solid hsl(0, 100%, 66%);
+}
+
+.fill-form input.name-in,
+.card-n {
+    display: block;
+    width: 280px;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin-bottom: 25px;
+
+}
+
+.fill-form .input {
+    position: relative;
+}
+
+
+.fill-form .input .error-N,
+.fill-form .input .error-n {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+    display: none;
+
+}
+
+.fill-form input::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+.tcvc {
+    margin-left: 30px;
+}
+
+.split {
+    display: block;
+}
+
+.month,
+.year {
+    margin: 3px;
+    width: 60px;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin-bottom: 25px;
+}
+
+.cvc {
+    margin: 10px;
+    width: 130px;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin-bottom: 10px;
+}
+
+.fill-form .b-2 {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -5px;
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+    display: none;
+}
+
+.fill-form .b-3 {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 65px;
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+    display: none;
+}
+
+.fill-form .b-4 {
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 170px;
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+    display: none;
+}
+
+.fill-form input:focus {
+    outline: 2px solid hsl(278, 94%, 30%);
+}
+
+.fill-form .confirm {
+    display: block;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    width: 280px;
+    border-radius: 6px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.thankyou {
+    text-align: center;
+    display: none;
+}
+
+.thankyou h2 {
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.thankyou p {
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 20px;
+}
+
+.thankyou .cont {
+    cursor: pointer;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    width: 280px;
+    border-radius: 6px;
+    height: 35px;
+}
+
+@media (max-width:768px) {
+    .card {
+        width: 375px;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 370px;
+        height: 245px;
+        background-image: url("images/bg-main-mobile.png");
+        background-size: cover;
+    }
+
+    .cards .card-one {
+        position: absolute;
+        width: 300px;
+        height: 270px;
+        z-index: 3;
+        left: 50px;
+        top: 20px;
+    }
+
+    .card-one .card-cvc {
+        margin-left: 235px;
+        margin-top: 74px;
+        text-align: right;
+        color: white;
+        font-size: 15px;
+    }
+
+    .cards .card-two {
+        background-size: contain;
+        width: 300px;
+        height: 250px;
+        z-index: 5;
+        left: 15px;
+        top: 120px;
+    }
+
+    .card-two .card-logo {
+        margin: 25px;
+        margin-bottom: 5px;
+    }
+
+    .card-two .card-num {
+        margin: 10px;
+        margin-left: 40px;
+        font-size: 21px;
+        color: white;
+    }
+
+    .card-two .card-name {
+        color: white;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .card-two .card-date {
+        margin-bottom: 10px;
+        margin-left: 180px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .forms {
+        margin: 20px auto;
+        margin-top: 100px;
+
+    }
+
+    .fill-form input.name-in,
+    .card-n {
+
+        width: 320px;
+        height: 40px;
+    }
+
+    .month,
+    .year {
+        margin: 3px;
+        width: 75px;
+        height: 35px;
+        border-radius: 6px;
+        border: 1px solid hsl(270, 3%, 87%);
+        margin-bottom: 25px;
+    }
+
+    .cvc {
+
+        width: 145px;
+        height: 40px;
+    }
+
+    .fill-form .confirm {
+        width: 320px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .thankyou .cont {
+
+        width: 320px;
+        height: 50px;
+    }
+
+}
